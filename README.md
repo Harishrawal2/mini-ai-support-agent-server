@@ -125,8 +125,7 @@ CLIENT_ORIGIN="https://your-client-domain.com"
 Run this during deployment:
 
 ```bash
-npm run build
-npm run db:deploy
+npm install && npm run prisma:generate && npm run build && npm run db:deploy && npm run db:seed
 npm start
 ```
 
